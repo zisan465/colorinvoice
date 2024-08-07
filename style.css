@@ -1,0 +1,203 @@
+
+/*Company Header Section*/
+body {
+  font-family: 'Hind Siliguri', sans-serif;
+  margin: 0;
+  padding: 0;
+
+} 
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+
+.header {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: right;
+  margin-right: 170px;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+
+.header::before {
+top: 0;
+}
+.header::after {
+bottom: 0;
+} 
+
+.company-info {
+display: flex; 
+align-items: center; 
+margin-bottom: 20px;
+}
+
+
+/*Company Header Section*/
+
+.customer-info{
+line-height: 1.3;
+} 
+
+.row {
+margin-bottom: 10px;
+}
+
+.col-6 {
+width: 50%;
+float: left;
+}
+
+.text-right {
+text-align: right;
+margin-top: 40px;
+}
+/*Product Details Sectin Starting Here*/
+.product-details {
+width: 100%;
+border-collapse: collapse; 
+margin-top: 120px;
+border-radius: 20px;
+}
+.product-details > thead{
+background-color: rgba(0, 0, 0, 0.122);
+}
+
+.product-details > th,.product-details td {
+border-bottom: 1px solid rgba(0, 0, 0, 0.289);
+border-top: 1px solid rgba(0, 0, 0, 0.289);
+padding: 2px 0px;   
+text-align: center;
+}
+
+
+
+.rightallthelement{
+  display: flex;
+  justify-content: flex-end;
+}
+
+/*Previous Due Detials */
+
+.money-details{
+display: grid;
+justify-content: end;
+line-height: 1.3;
+font-size:15px; 
+text-align: right;
+} 
+.top-border-line{
+border-top: 1px solid black;
+display: inline-block;
+background-color: #000000;
+color: white;
+}
+.money-details > tbody > tr:nth-child(7){
+display: flex;
+justify-content: flex-end;  
+}
+
+.subtotal,.vat,.discount,.labour,.transport,.total-amount,.paid-amount,.due-amount,.previous-due{
+padding-right: 60px;
+}  
+.due-paid-sell{
+  width: 45%;
+  transform: rotate(337deg);
+  OPACITY: 50%;
+}
+.dinamic-product-add > tr > td:nth-child(3){
+font-weight: bold;
+}
+
+#dinamic-product-add > tr:nth-child(even) {
+    background: #00000006;
+}
+
+#dinamic-product-add > td:hover {
+    background: #ecbf3e;
+    cursor: pointer;
+}
+
+
+#customer-name,#customer-number,#customer--address,#customer-delivery-address,#previous-due,#present-due,#total-due,#subtotal,#vat,#discount,#labour-cost,#transport-cost,#total-amount,#submision-ammount,#due-amount{
+font-weight: bold;
+}
+
+
+
+
+
+
+
+
+/*Popup Page Starting Here*/
+.popup {
+display: flex;
+align-items: center;
+justify-content: center;
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(0, 0, 0, 0.5);
+opacity: 0;
+visibility: hidden;
+transition: opacity 0.5s ease, visibility 0.3s ease; 
+z-index: 2;
+}
+
+
+.popup-content {
+background: #fff;
+padding: 20px;
+border-radius: 5px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+text-align: center;
+width: 300px;
+}
+
+textarea {
+width: 100%;
+height: 100px;
+margin-bottom: 10px;
+display: none;
+}
+
+.paste-button {
+padding: 10px;
+background-color: #000000;
+color: #fff;
+text-align: center;
+cursor: pointer;
+border: none;
+border-radius: 3px;
+margin: 5px;
+width: 100px;
+}
+.paste-button:hover{
+background-color: rgba(0, 0, 0, 0.233);
+color: black;
+}
+.img-print-button{
+cursor: pointer;
+background-color: rgba(0, 0, 0, 0.034); 
+border-radius: 30px;
+}  
+.img-print-button:hover{
+background-color: rgb(255, 255, 255); 
+}
+/*Popup Page End Here*/
+@media print {
+  .container {
+    max-width: 100%;
+}
+  .signature-section {
+    margin-top:30px;
+  }
+  }
+
+ 

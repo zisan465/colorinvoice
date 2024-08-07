@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;700&display=swap" rel="stylesheet">
+<link rel="icon" href="ibrahim2.jpg" type="image/x-icon">
+
+  <title>Ibrahim Sanitary</title>
+  <link rel="stylesheet" href="style.css">
+</head> 
+<body>
+ <!--Popup Element Starting Here-->
+  <div class="popup" id="popup">
+    <div class="popup-content">
+      <img src="ibrahim2.jpg" alt="Company Logo" style="width: 100%;">
+      <textarea id="myTextarea" placeholder="Paste your text here..."></textarea>
+      <button class="paste-button" onclick="pasteTextForInvoice('invoice')">ইনভয়েস</button>
+      <button class="paste-button" onclick="pasteTextForChallan('challan')">চালান</button>
+    </div>
+  </div>
+   <!--Popup Element End Here-->
+  
+
+    <div class="container">
+
+  <div class="header" id="header-slogan">বিক্রয় বিল</div>
+
+<!---Customer Information-->
+    <div class="row customer-info"> 
+      <div class="col-6">
+        ক্রেতার আইডি:  ‍<span id="customer-id"></span> <br>
+       <span id="customer-header-name-info"> ক্রেতার নাম :</span> <span id="customer-name" contenteditable="true"></span> <br> 
+       <span id="customer-header-number-info">ক্রেতার মোবাইল নম্বর: </span> <span id="customer-number" contenteditable="true"></span> <br>
+       <span id="customer-header-presentaddress-info"> ক্রেতার ঠিকানা:</span> <span id="customer--address" contenteditable="true"></span><br>
+       <span id="customer-header-deliveryaddress-info"> পণ্য যেখানে যাবে: </span><span id="customer-delivery-address" contenteditable="true"></span>
+      </div> 
+      <div class="col-6 text-right">
+        বিক্রি করেছেন: জিসান আহম্মেদ<br>
+        চালান নম্বর:<span id="customer-challan-no"></span><br>
+        বিক্রির সময় ও তারিখ: <span id="sales-time"></span>
+      </div> 
+    </div>
+
+     <!--Product Details-->
+     <table class="product-details">
+      <thead>
+        <tr>
+          <td>ক্রম</td>
+          <td>কোড</td>
+          <td>বিবরণ</td> 
+          <td colspan="3">পরিমান</td>
+          <td id="unit-price">একক দাম</td>
+          <td id="total-price">মোট</td> 
+        </tr>
+    </thead>
+      <tbody id="dinamic-product-add" style="font-weight:bold ;"></tbody>
+    </table> 
+
+
+    <div class="row rightallthelement" id="row-2">
+      <div class="col-6">
+        <img src="due.png" alt="due/paid" class="due-paid-sell" id="duepaidsell">
+      </div>
+      <div class="col-6">
+        <table class="money-details"> 
+          <tr>
+            <td class="subtotal">সর্বমোট পণ্যের মূল্য:</td>
+            <td id="subtotal">0</td> 
+          </tr>
+          <tr>
+            <td class="discount">ডিষ্কাউন্ট (-):</td>
+            <td id="discount">0</td>
+          </tr>
+          <tr>
+            <td class="labour">লেবার খরচ(+):</td>
+            <td id="labour-cost">0</td>
+          </tr>
+          <tr>
+            <td class="transport">পরিবহন খরচ (+):</td>
+            <td id="transport-cost">0</td>
+          </tr>
+          <tr>
+            <td class="previous-due">পূর্বের বকেয়া:</td>
+            <td id="previous-due">0</td> 
+          </tr>
+          <tr class="top-border-line">
+            <td class="total-amount">মোট টাকা:</td>
+            <td id="total-amount">0</td>
+          </tr>
+          <tr>
+            <td class="paid-amount">জমার পরিমাণ:</td>
+            <td id="submision-ammount">0</td>
+          </tr>
+          <tr class="top-border-line">
+            <td  class="due-amount">বকেয়া পরিমাণ:</td>
+            <td id="due-amount">0</td>
+          </tr>
+        </table> 
+      </div>
+    </div>
+
+    
+
+ 
+
+  </div>
+ 
+
+<script src="product.js"></script> 
+  <script src="script.js"></script> 
+</body>
+</html>
