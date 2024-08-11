@@ -22,6 +22,29 @@ body {
     margin-bottom: 10px;
 }
 
+.signature-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end; /* 1px solid line above the signatures */
+  padding: 10px; /* Adjust padding as needed */
+  margin-top: 120px;
+}
+
+.signature {
+  border-top: 1px solid #000;
+  font-weight: bold;
+  font-size: 14px; /* Adjust font size as needed */ 
+}
+
+.received-by {
+  order: 1; /* Places received-by on the left */
+}
+
+.authorized-by {
+  order: 2; /* Places authorized-by on the right */
+} 
+
+
 
 .header::before {
 top: 0;
