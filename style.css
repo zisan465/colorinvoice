@@ -114,7 +114,7 @@ text-align: right;
 .top-border-line{
 border-top: 1px solid black;
 display: inline-block;
-background-color: #000000;
+background-color: #00000070;
 color: white;
 font-weight: bold;
 }
